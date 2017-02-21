@@ -8737,7 +8737,7 @@ p {
 @media (min-width: 767px) {
     p {
         margin: 0 0 20px;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.6
     }
 }
@@ -9027,6 +9027,11 @@ h4 {
 .job-list>li>.rate {
     max-width: 100%;
     display: inline-block;
+}
+.job-list>li>.category{
+    float: right;
+    color: #aaa;
+    font-style: italic;
 }
 @media screen and (max-width: 600px) {
     .job-list>li {
@@ -9457,7 +9462,7 @@ ul.banner-social-buttons {
     }
 }
 .post-header {
-    margin-bottom: 90px
+    margin-bottom: 40px
 }
 .post-header .post-meta {
     text-align: center

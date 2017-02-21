@@ -20,13 +20,10 @@ permalink: '/job-form/'
   </head>
 
   <body>
-
-    <div class="container">
+    <div id="job-form-container" class="container">
       <div class="row col-md-9">
-
         <h1>Submit a job to In The Weeds</h1>
-        <p class="lead">Let the community know you are looking for design contributions. If your free / open source project needs some design work, use this form to submit a job to Open Source Design.</p>
-        <p class="lead"><a href="http://opensourcedesign.net/code-of-conduct/">We have a code of conduct</a>. Consider reading it before submitting your job.</p>
+        <p class="lead">Let the community know you are looking for Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum porro delectus, temporibus quos sapiente labore nobis.</p>
         <form method="POST" action="https://api.staticman.net/v2/entry/JonathanMatthey/intheweeds/gh-pages/jobs">
           <input name="options[redirect]" type="hidden" value="https://jonathanmatthey.github.io/intheweeds/thank-you/">
           <input name="fields[status]" type="hidden" value="searching">
@@ -69,20 +66,22 @@ permalink: '/job-form/'
               <input type="text"
                 class="form-control"
                 id="title"
-                placeholder="E.g. Graphic designer for OpenAcme"
+                placeholder="E.g. Sous Chef"
                 name="fields[title]"
                 required>
             </div>
             <div class="form-group">
-              <label for="role">Job role</label>
-              <p class="help-block">What role is this job? Use at most two words.</p>
-              <input type="text"
+              <label for="category">Category</label>
+              <p class="help-block">What category is this job?</p>
+              <select
                 class="form-control"
-                id="role"
-                placeholder="E.g. Graphic Designer"
-                name="fields[role]"
+                id="category"
+                name="fields[category]"
                 required>
-              <small>Some examples are "UX Designer", "UI Designer", "Graphic Designer", "Researcher", "Q&amp;A"</small>
+                <option value="bars">bars</option>
+                <option value="management">management</option>
+                <option value="tacotrucks">tacotrucks</option>
+              </select>
             </div>
 
             <div class="form-group">
@@ -122,25 +121,12 @@ permalink: '/job-form/'
             </div>
             <div class="form-group">
               <label for="description">Job description</label>
-              <p class="help-block">Include a brief introduction to your project, and explain the design work needed.</p>
+              <p class="help-block">Include a brief introduction and explain the work needed.</p>
               <textarea class="form-control"
                 id="description"
                 rows="5"
                 name="fields[description]"
                 required></textarea>
-              <small>Markdown is okay</small>
-            </div>
-            <div class="form-group">
-              <label for="skills">
-                Deliverables
-                <small>(optional)</small>
-              </label>
-              <p class="help-block">If appropriate, list the things you expect the designer to deliver. For example: a logo and a set of icons.</p>
-              <textarea class="form-control"
-                id="skills"
-                rows="5"
-                name="fields[skills]"></textarea>
-              <small>Markdown is okay</small>
             </div>
             <div class="form-group">
               <label for="how_to_apply">How to apply</label>
@@ -150,33 +136,9 @@ permalink: '/job-form/'
                 rows="5"
                 required
                 name="fields[how_to_apply]"></textarea>
-              <small>Markdown is okay</small>
-            </div>
-            <div class="form-group">
-              <label for="links">
-                Relevant links
-                <small>(optional)</small>
-              </label>
-              <p class="help-block">Things like source code repositories, existing design work, project wiki or blog, etc.</p>
-              <textarea class="form-control"
-                id="links"
-                rows="5"
-                name="fields[how_to_apply]"></textarea>
-            </div>
-            <div class="form-group">
-              <label for="tags">
-                Tags
-                <small>(optional)</small>
-              </label>
-              <p class="help-block">Keywords relevant to the job. Separate tags with commas.</p>
-              <textarea class="form-control"
-                id="tags"
-                rows="2"
-                placeholder="E.g. logo, branding, graphic design"
-                name="fields[tags]"></textarea>
             </div>
           </fieldset>
-          <button type="submit" href="thankyou.html" class="btn btn-primary btn-lg">Submit your job to Open Source Design</button>
+          <button type="submit" href="thankyou.html" class="btn btn-primary btn-lg">Submit your job to InTheWeeds</button>
         </form>
 
       </div>

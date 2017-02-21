@@ -8,11 +8,17 @@ title: Jobs
     <div class="col-md-10 col-md-offset-1">
       <h1>Jobs</h1>
       <p>
-        <span class="realstrong">In The Weeds</span> is the best place to find and list jobs that ....... Find the most qualified people in Austin Tx.  Follow us on <a href="https://www.facebook.com/groups/intheweedsatx">Facebook</a>.
+        <span class="realstrong">In The Weeds</span> is the best place to find and list jobs that Lorem ipsum dolor sit amet, consectetur excepturi. Find the most qualified people in Austin Tx. Follow us on <a href="https://www.facebook.com/groups/intheweedsatx">Facebook</a>.
       </p>
       <div class="search-row clearfix">
         <input id="search_term" name="term" placeholder="Search: 'waiter', 'barman', ..." type="text">
         <a class="btn btn-primary" href="/intheweeds/job-form/">Post a job now</a>
+      </div>
+
+      <div class="filters">
+        <a href="#" class="active">All</a>
+        <a href="#">Bars</a>
+        <a href="#">Management</a>
       </div>
 
       <ul class="job-list">
@@ -28,6 +34,7 @@ title: Jobs
 -->
                 <span class="pill organization">@ {{ page.organization }}</span>
                 <span class="pill rate">{{ page.rate }}</span>
+                <span class="pill category {{ page.category }}">{{ page.category }}</span>
               </li>
               {% endunless %}
             {% endif %}
@@ -39,6 +46,7 @@ title: Jobs
   <script src="/intheweeds/js/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
+
       $('#search_term').keyup(function (e) {
         var searchTerm = e.target.value.toLowerCase();
         $(".job-list li").each(function(i,obj){
@@ -49,6 +57,20 @@ title: Jobs
           }
         })
       });
+
+      $('.filters a').click(function(event){
+        event.preventDefault();
+        $(this).addClass('active').siblings('.active').removeClass('active');
+        $('#search_term').val('');
+        var cat = this.innerHTML.toLowerCase();
+        if(cat === "all"){
+          $(".job-list li").show();
+        } else {
+          $(".job-list li").hide();
+          $(".category." + cat).parent().show();
+        }
+      });
+
     });
   </script>
 </div>
