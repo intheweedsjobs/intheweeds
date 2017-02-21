@@ -3,16 +3,17 @@ layout: default
 ---
 
 <form method="POST" action="https://api.staticman.net/v2/entry/JonathanMatthey/intheweeds/gh-pages/emails">
-  <input name="fields[date_posted]" type="hidden">
-  <input name="options[slug]" type="hidden" id="slug" value="">
+  <input id="date_posted" name="fields[date_posted]" type="hidden">
+  <input id="slug" name="options[slug]" type="hidden" id="slug" value="">
+  <input id="redirect" name="options[redirect]" type="hidden" value="">
 
   <fieldset>
     <div class="form-group">
       <input type="email"
         class="form-control"
-        id="email"
+        id="emailaddress"
         placeholder="Enter your email address"
-        name="fields[email]"
+        name="fields[emailaddress]"
         required>
     </div>
 
@@ -73,7 +74,7 @@ layout: default
 
     $(document).ready(function() {
 
-      $('input#email').keyup(function (e) {
+      $('input#emailaddress').keyup(function (e) {
         $('input#slug').val(e.target.value.replace(/[^a-zA-Z]/g, ""));
       });
 
@@ -84,7 +85,8 @@ layout: default
 
       var datestring = year + "-" + month + "-" + day;
 
-      $('[name="fields[date_posted]"]').val(datestring);
+      $('#date_posted').val(datestring);
+      $('#redirect').val(location.href);
 
   });
 </script>
