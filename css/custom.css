@@ -1,10 +1,6 @@
 .container {
 }
 
-#job-form-container{
-  padding: 40px 0 80px;
-}
-
 small {
   color: #737373;
   font-weight: normal;
@@ -99,4 +95,12 @@ input{
 .filters .active{
   text-decoration: underline;
   font-weight:600;
+}
+
+.text-container{
+  padding: 40px 0 80px;
+}
+
+.text-center{
+  text-align: center;
 }
