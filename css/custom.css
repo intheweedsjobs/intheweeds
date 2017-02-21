@@ -22,11 +22,25 @@ legend {
   width: 70%;
 }
 
+#email-form{
+  text-align: center;
+}
+
+#email-form #emailaddress{
+  margin: 0 auto;
+  width: 300px;
+}
+
 a.btn.disabled {
   pointer-events: auto;
 }
 
+.header-logo-row{
+  margin-bottom: 20px;
+}
+
 .main-logo{
+  width: 90px;
   margin: 30px auto 0 auto;
   display: block;
 }

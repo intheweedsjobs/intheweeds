@@ -2,80 +2,92 @@
 layout: default
 ---
 
-<form method="POST" action="https://api.staticman.net/v2/entry/JonathanMatthey/intheweeds/gh-pages/emails">
-  <input id="date_posted" name="fields[date_posted]" type="hidden">
-  <input id="slug" name="options[slug]" type="hidden" id="slug" value="">
-  <input id="redirect" name="options[redirect]" type="hidden" value="">
-
-  <fieldset>
-    <div class="form-group">
-      <input type="email"
-        class="form-control"
-        id="emailaddress"
-        placeholder="Enter your email address"
-        name="fields[emailaddress]"
-        required>
-    </div>
-
-  </fieldset>
-  <button type="submit" href="#" class="btn btn-primary">Submit</button>
-</form>
 
 <div class="container">
   <div class="row">
     <div class="post col-md-8 col-md-offset-2">
+      <div id="email-form-wrapper">
+        <p>In order to read this job, please enter your email address.  We'll never spam you but we'd like help you find a great job.</p>
+        <form id="email-form" method="POST" action="https://api.staticman.net/v2/entry/JonathanMatthey/intheweeds/gh-pages/emails" ">
+          <input id="date_posted" name="fields[date_posted]" type="hidden">
+          <input id="slug" name="options[slug]" type="hidden" id="slug" value="">
+          <input id="redirect" name="options[redirect]" type="hidden" value="">
+          <fieldset>
+            <div class="form-group">
+              <input type="email"
+                class="form-control"
+                id="emailaddress"
+                placeholder="Enter your email address"
+                name="fields[emailaddress]"
+                required>
+            </div>
+          </fieldset>
+          <button type="submit" href="#" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <div>
-      <label for="organization">Organization:</label> <a id="organization" class="organization" href="{{ page.org_url }}">{{ page.organization }}</a><br/>
-      <label for="status">Status:</label> <span id="status" class="status">{{ page.status }}</span><br/>
-      <label for="rate">Rate:</label> <span id="rate" class="rate">{{ page.rate }}</span><br/>
-      <label for="date">Date Posted:</label> <span id="date" class="date">{{ page.date_posted }}</span><br/>
-    </div>
-    <div class="role">
-      {% if page.role %}
-      <label for="skills">Role:</label>
-        {{ page.role }}
-      {% endif %}
-    </div>
-    <div class="category">
-      {% if page.category %}
-      <label for="category">Category:</label>
-        {{ page.category }}
-      {% endif %}
-    </div>
-    <div class="how_to_apply">
-      {% if page.how_to_apply %}
-      <label for="how_to_apply">How to apply:</label>
-        {{ page.how_to_apply }}
-      {% endif %}
-    </div>
-    <div class="links">
-      {% if page.links %}
-      <label for="links">Links:</label>
-        {{ page.links }}
-      {% endif %}
-    </div>
-  </header>
+      <div id="job-post" style="display: none;">
+        <header class="post-header">
+          <h1 class="post-title">{{ page.title }}</h1>
+          <div>
+            <label for="organization">Organization:</label> <a id="organization" class="organization" href="{{ page.org_url }}">{{ page.organization }}</a><br/>
+            <label for="status">Status:</label> <span id="status" class="status">{{ page.status }}</span><br/>
+            <label for="rate">Rate:</label> <span id="rate" class="rate">{{ page.rate }}</span><br/>
+            <label for="date">Date Posted:</label> <span id="date" class="date">{{ page.date_posted }}</span><br/>
+          </div>
+          <div class="role">
+            {% if page.role %}
+            <label for="skills">Role:</label>
+              {{ page.role }}
+            {% endif %}
+          </div>
+          <div class="category">
+            {% if page.category %}
+            <label for="category">Category:</label>
+              {{ page.category }}
+            {% endif %}
+          </div>
+          <div class="how_to_apply">
+            {% if page.how_to_apply %}
+            <label for="how_to_apply">How to apply:</label>
+              {{ page.how_to_apply }}
+            {% endif %}
+          </div>
+          <div class="links">
+            {% if page.links %}
+            <label for="links">Links:</label>
+              {{ page.links }}
+            {% endif %}
+          </div>
+        </header>
 
-  <article class="post-content" data="{{content}}">
-    {{ page.description | markdownify }}
-    {{ content }}
-  </article>
-
+        <article class="post-content" data="{{content}}">
+          {{ page.description | markdownify }}
+          {{ content }}
+        </article>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-</div>
 
+<script src="/intheweeds/js/cookie.js"></script>
 <script src="/intheweeds/js/jquery.min.js"></script>
 
 <script>
 
     $(document).ready(function() {
+      console.log(Cookies.get('intheweedsEmail'));
+      if(Cookies.get('intheweedsEmail')){
+        $("#email-form-wrapper").hide();
+        $("#job-post").show();
+      }
 
       $('input#emailaddress').keyup(function (e) {
         $('input#slug').val(e.target.value.replace(/[^a-zA-Z]/g, ""));
+      });
+
+      $("#email-form").submit(function(){
+        Cookies.set('intheweedsEmail', $('input#emailaddress').val());
       });
 
       var date = new Date();
