@@ -1,6 +1,28 @@
 ---
 layout: default
 ---
+
+<form method="POST" action="https://api.staticman.net/v2/entry/JonathanMatthey/intheweeds/gh-pages/emails">
+  <input name="fields[date_posted]" type="hidden">
+  <input name="options[slug]" type="hidden" id="slug" value="">
+
+  <fieldset>
+    <legend>About you</legend>
+    <div class="form-group">
+      <label for="organization">Organisation</label>
+      <p class="help-block">The name of your company, organisation or project.</p>
+      <input type="text"
+        class="form-control"
+        id="organization"
+        placeholder="E.g. AcmeProjects"
+        name="fields[organization]"
+        required>
+    </div>
+
+  </fieldset>
+  <button type="submit" href="thankyou.html" class="btn btn-primary btn-lg">Submit your job to InTheWeeds</button>
+</form>
+
 <div class="container">
   <div class="row">
     <div class="post col-md-8 col-md-offset-2">
@@ -19,12 +41,12 @@ layout: default
         {{ page.role }}
       {% endif %}
     </div>
-<!--     <div class="skills">
-      {% if page.skills %}
-      <label for="skills">Skills:</label>
-        {{ page.skills }}
+    <div class="category">
+      {% if page.category %}
+      <label for="category">Category:</label>
+        {{ page.category }}
       {% endif %}
-    </div> -->
+    </div>
     <div class="how_to_apply">
       {% if page.how_to_apply %}
       <label for="how_to_apply">How to apply:</label>
@@ -37,17 +59,35 @@ layout: default
         {{ page.links }}
       {% endif %}
     </div>
-
-    <div class="description">
-      {% if page.description %}{{ page.description | markdownify }}{% endif %}
-    </div>
-
   </header>
 
   <article class="post-content" data="{{content}}">
+    {{ page.description | markdownify }}
     {{ content }}
   </article>
 
 </div>
 </div>
 </div>
+
+<script src="/intheweeds/js/jquery.min.js"></script>
+
+<script>
+
+    $(document).ready(function() {
+
+      $('input#email').keyup(function (e) {
+        $('input#slug').val(e.target.value.replace(/[^a-zA-Z]/g, ""));
+      });
+
+      var date = new Date();
+      var day = ("0" + date.getDate()).slice(-2);
+      var month = ("0"+(date.getMonth()+1)).slice(-2);
+      var year = date.getFullYear();
+
+      var datestring = year + "-" + month + "-" + day;
+
+      $('[name="fields[date_posted]"]').val(datestring);
+
+  });
+</script>

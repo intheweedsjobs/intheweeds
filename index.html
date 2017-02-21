@@ -40,10 +40,10 @@ title: Jobs
               {% endunless %}
             {% endif %}
         {% endfor %}
-        <li id="no-jobs" style="display: none;padding-top:30px;text-align:center;">
-          <h5>No jobs match your search, please try again.</h5>
-        </li>
       </ul>
+      <div id="no-jobs" style="display: none;padding-top:30px;text-align:center;">
+        <h5>No jobs match your search, please try again.</h5>
+      </div>
     </div>
   </div>
 
@@ -69,6 +69,7 @@ title: Jobs
 
       $('.filters a').click(function(event){
         event.preventDefault();
+        $("#no-jobs").hide();
         $(this).addClass('active').siblings('.active').removeClass('active');
         $('#search_term').val('');
         var cat = this.innerHTML.toLowerCase();
