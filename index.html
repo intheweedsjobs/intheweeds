@@ -19,6 +19,7 @@ title: Jobs
         <a href="#" class="active">All</a>
         <a href="#">Bars</a>
         <a href="#">Management</a>
+        <a href="#">TacoTrucks</a>
       </div>
 
       <ul class="job-list">
@@ -39,6 +40,9 @@ title: Jobs
               {% endunless %}
             {% endif %}
         {% endfor %}
+        <li id="no-jobs" style="display: none;padding-top:30px;text-align:center;">
+          <h5>No jobs match your search, please try again.</h5>
+        </li>
       </ul>
     </div>
   </div>
@@ -55,7 +59,12 @@ title: Jobs
           if(!$(obj).text().match(new RegExp(searchTerm, 'i'))){
             $(obj).hide();
           }
-        })
+        });
+        if($(".job-list li:visible").length === 0){
+          $("#no-jobs").show();
+        } else {
+          $("#no-jobs").hide();
+        }
       });
 
       $('.filters a').click(function(event){
