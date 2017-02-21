@@ -1,5 +1,4 @@
 .container {
-  padding-bottom: 40px;
 }
 
 small {
@@ -25,4 +24,48 @@ legend {
 
 a.btn.disabled {
   pointer-events: auto;
+}
+
+.main-logo{
+  margin: 30px auto 0 auto;
+  display: block;
+}
+
+.realstrong{
+  font-weight:bold;
+  text-decoration: underline;
+}
+
+.footer-logo{
+  height: 50px;
+}
+
+.search-row{
+  background:#eee;
+  border-radius:50px;
+  padding: 15px 40px;
+}
+
+.search-row input{
+  float:left;
+  min-width: 300px;
+  padding: 6px 10px;
+}
+
+.search-row a{
+  float:right;
+}
+
+input{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.job-list{
+  margin-top: 20px;
+}
+
+.job-list p{
+  font-size:16px;
+  margin-top:5px;
 }

@@ -1175,7 +1175,7 @@ h6,
     font-family: inherit;
     font-weight: 500;
     line-height: 1.1;
-    color: inherit
+    color: #666;
 }
 h1 small,
 h1 .small,
@@ -3172,8 +3172,8 @@ select[multiple].input-lg,
     background-image: none;
     border: 1px solid transparent;
     white-space: nowrap;
-    padding: 6px 12px;
-    font-size: 14px;
+    padding: 7px 16px;
+    font-size: 15px;
     line-height: 1.42857;
     border-radius: 4px;
     -webkit-user-select: none;
@@ -7433,7 +7433,7 @@ button.close {
 .fa-navicon:before,
 .fa-reorder:before,
 .fa-bars:before {
-    content: "ïƒ‰"
+    content: "";
 }
 .fa-list-ul:before {
     content: "ïƒŠ"
@@ -8614,7 +8614,7 @@ h6,
     letter-spacing: 1px
 }
 a {
-    color: #2a7ae2;
+    color: #337ab7;
     text-decoration: none;
     border-bottom: 1px solid transparent
 }
@@ -8736,7 +8736,7 @@ p {
 }
 @media (min-width: 767px) {
     p {
-        margin: 0 0 35px;
+        margin: 0 0 20px;
         font-size: 20px;
         line-height: 1.6
     }
@@ -8800,7 +8800,7 @@ pre>code {
     border-bottom: 1px solid rgba(68, 68, 68, 0.3);
     text-transform: uppercase;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #444
+    background-color: #fff;
 }
 .navbar-custom .navbar-brand {
     font-weight: 700;
@@ -8841,10 +8841,11 @@ pre>code {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
     outline: none;
-    background-color: rgba(68, 68, 68, 0.3)
+    color:#2a7ae2;
+    background: #fff;
 }
 .navbar-custom .navbar-collapse a {
-    color: #fff
+    color: #444;
 }
 .navbar-custom .navbar-brand {
     font-size: 16px
@@ -8854,7 +8855,7 @@ pre>code {
         padding: 10px 0;
         border-bottom: none;
         letter-spacing: 1px;
-        background: #fdfdfd;
+        background: transparent;
         -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
         transition: background .5s ease-in-out, padding .5s ease-in-out
@@ -8864,10 +8865,11 @@ pre>code {
     }
     .navbar-custom.top-nav-collapse {
         padding: 0;
-        background-color: #444
+        background: #fff;
+        border-bottom: 1px solid #eee;
     }
     .navbar-custom.top-nav-collapse a {
-        color: #fff
+        color: #444;
     }
     .navbar-custom .top-nav-collapse {
         border-bottom: 1px solid rgba(68, 68, 68, 0.3)
@@ -8881,8 +8883,7 @@ pre>code {
     position: relative
 }
 .navbar-brand .logo {
-    width: 40px;
-    height: 40px;
+    height: 30px;
     vertical-align: middle;
     margin-right: 4px;
     margin-top: -4px;
@@ -8965,7 +8966,7 @@ pre>code {
     }
 }
 .navbar-nav>li>a {
-    padding-top: 20px
+    padding-top: 10px
 }
 h1,
 h3 {
@@ -8977,7 +8978,7 @@ h4 {
     text-align: center
 }
 .page-content {
-    padding: 140px 0 40px
+    padding: 20px 0 40px;
 }
 .page-heading {
     font-size: 20px
@@ -9005,20 +9006,27 @@ h4 {
 .job-list>li {
     width: 100%;
     list-style: none;
-    margin-bottom: 2em;
-    margin-top: 1em;
     display: inline-block;
-    vertical-align: top
+    vertical-align: top;
+    border-bottom:1px solid #eee;
+    padding: 10px 0;
+
 }
 .job-list>li>h2,
 .job-list>li>p {
     margin-bottom: 0
 }
-.job-list>li>h2 a,
+.job-list>li>p{
+    opacity: 0.5;
+}
+.job-list>li a{
+    color: #FF9D00;
+    font-weight: 600;
+}
 .job-list>li>.organization,
 .job-list>li>.rate {
     max-width: 100%;
-    display: block
+    display: inline-block;
 }
 @media screen and (max-width: 600px) {
     .job-list>li {
@@ -9326,7 +9334,7 @@ footer p {
     }
 }
 h2 {
-    font-size: 24px
+    font-size: 20px
 }
 .post {
     margin-top: 3rem

@@ -4,38 +4,51 @@ title: Jobs
 ---
 
 <div class="container">
-<div class="row">
-<div class="col-md-10 col-md-offset-1">
-  <h1>Jobs</h1>
-  <p>
-    Need Something Designed? Easily <a href="/intheweeds/job-form/">post a job now</a>. We'll review your posting and post it as soon as we can!
-  </p>
-  <hr>
-  <ul class="job-list">
-    {% for page in site.pages reversed %}
-        {% if page.layout == 'jobs' and page.status == 'searching' %}
-          {% unless page.title contains 'Job Title' %}{% comment %} Filter out the example page {% endcomment %}
-          <li>
-            <h2>
-              <a class="page-link" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.title }}</a>
-            </h2>
-            <p>
-              {% if page.role %}
-              <span class="pill role">{{ page.role }}</span> @
-              {% endif %}
-              <span class="pill organization">{{ page.organization }}</span>
-            </p>
-            <span class="pill rate">{{ page.rate }}</span>
-          </li>
-          {% endunless %}
-        {% endif %}
-    {% endfor %}
-  </ul>
-  <hr>
-  <ul>
-    <li>More comfortable with Git? Use our <a href="https://github.com/opensourcedesign/jobs">git based method</a>.</li>
-    <li>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></li>
-  </ul>
-</div>
-</div>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h1>Jobs</h1>
+      <p>
+        <span class="realstrong">In The Weeds</span> is the best place to find and list jobs that ....... Find the most qualified people in Austin Tx.  Follow us on <a href="https://www.facebook.com/groups/intheweedsatx">Facebook</a>.
+      </p>
+      <div class="search-row clearfix">
+        <input id="search_term" name="term" placeholder="Search: 'waiter', 'barman', ..." type="text">
+        <a class="btn btn-primary" href="/intheweeds/job-form/">Post a job now</a>
+      </div>
+
+      <ul class="job-list">
+        {% for page in site.pages reversed %}
+            {% if page.layout == 'jobs' and page.status == 'searching' %}
+              {% unless page.title contains 'Job Title' %}{% comment %} Filter out the example page {% endcomment %}
+              <li>
+                <a class="page-link" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.title }}</a>
+<!--
+                {% if page.role %}
+                <span class="pill role">{{ page.role }}</span>
+                {% endif %}
+-->
+                <span class="pill organization">@ {{ page.organization }}</span>
+                <span class="pill rate">{{ page.rate }}</span>
+              </li>
+              {% endunless %}
+            {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <script src="/intheweeds/js/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#search_term').keyup(function (e) {
+        var searchTerm = e.target.value.toLowerCase();
+        $(".job-list li").each(function(i,obj){
+          $(obj).show();
+          console.log($(obj).text().toLowerCase());
+          if(!$(obj).text().match(new RegExp(searchTerm, 'i'))){
+            $(obj).hide();
+          }
+        })
+      });
+    });
+  </script>
 </div>
