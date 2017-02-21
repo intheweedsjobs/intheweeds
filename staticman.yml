@@ -84,7 +84,7 @@ jobs:
     description: "frontmatterContent"
 
 emails:
-  allowedFields: ["email"]
+  allowedFields: ["email", "date_posted"]
   branch: "gh-pages"
   filename: "{options.slug}"
   format: "frontmatter"
