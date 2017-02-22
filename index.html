@@ -47,8 +47,8 @@ title: Jobs
             {% endif %}
         {% endfor %}
       </ul>
-      <div id="no-jobs" style="display: none;padding-top:30px;text-align:center;">
-        <h5>No jobs match your search, please try again.</h5>
+      <div id="no-jobs" style="display: none;padding-top:20px;text-align:center;">
+        <h5>No jobs match your search.</h5>
       </div>
     </div>
   </div>
@@ -84,6 +84,11 @@ title: Jobs
         } else {
           $(".job-list li").hide();
           $(".category." + cat).parent().show();
+        }
+        if($(".job-list li:visible").length === 0){
+          $("#no-jobs").show();
+        } else {
+          $("#no-jobs").hide();
         }
       });
 

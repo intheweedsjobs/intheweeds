@@ -97,6 +97,8 @@ layout: default
 <script>
 
     $(document).ready(function() {
+      var interval = null;
+
       console.log(Cookies.get('intheweedsEmail'));
       if(Cookies.get('intheweedsEmail')){
         $("#email-form-wrapper").hide();
@@ -108,8 +110,17 @@ layout: default
       });
 
       $("#mc-embedded-subscribe-form").submit(function(){
-        Cookies.set('intheweedsEmail', $('input#emailaddress').val());
+        interval = setInterval(checkMailChimpSuccess, 300);
       });
+
+      function checkMailChimpSuccess(){
+        if($("#mce-success-response").length){
+          clearInterval(interval);
+          Cookies.set('intheweedsEmail', $('input#emailaddress').val());
+          $("#email-form-wrapper").hide();
+          $("#job-post").show();
+        }
+      }
 
       var date = new Date();
       var day = ("0" + date.getDate()).slice(-2);
