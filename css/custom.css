@@ -144,3 +144,8 @@ h6{
   padding: 15px 0;
   border-bottom: 1px solid #eee;
 }
+
+.navbar-header .fa{
+  font-size:18px;
+  margin: 13px 15px 12px 0px;
+}

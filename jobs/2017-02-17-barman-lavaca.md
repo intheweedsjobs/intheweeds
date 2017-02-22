@@ -6,7 +6,7 @@ layout: jobs
 organization: Lavaca
 org_url: 'https://github.com/labsquare'
 title: Barman
-category: bars
+category: bar
 compensation: gratis
 skills: 'I create an issue : https://github.com/labsquare/fastQt/issues/35'
 how_to_apply:
