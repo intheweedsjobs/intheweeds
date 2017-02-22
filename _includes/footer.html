@@ -1,0 +1,57 @@
+<footer class="site-footer container">
+  <h5 id="sponsors-title">sponsors</h5>
+  <ul class="social-media-list row">
+    <li>
+      <a href="#">
+        <img class="footer-logo" src="/intheweeds/images/fernet-Branca-logo.jpg"/>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img class="footer-logo" src="/intheweeds/images/orca-inventory-logo.png"/>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img id="ride-austin-logo" class="footer-logo" src="/intheweeds/images/ride-austin-logo.png"/>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img id="tequila-logo" class="footer-logo" src="/intheweeds/images/tequila_512_logo.png"/>
+      </a>
+    </li>
+  </ul>
+
+</footer>
+
+<script id="template-activity-item" type="text/template">
+<li class="item">
+  <a href="https://github.com/<%= actor.login %>" class="avatar"><img src="<%= actor.avatar_url %>"></a>
+  <div class="content">
+    <a href="<%= link %>" class="name"> @<%= actor.login %></a> <%= event_type %>
+
+  </div>
+  <span class="date"><%= created_at %></span>
+</li>
+</script>
+
+<script id="template-events-item" type="text/template">
+  <div class="post">
+      <h3>
+        <a href="<%= link %>"><%= title %></a>
+      </h3>
+  </div>
+</script>
+
+<script id="template-jobs-item" type="text/template">
+  <div class="post">
+      <h3>
+        <a href="<%= link %>"><%= title %></a>
+      </h3>
+  </div>
+</script>
+
+<script src="//opensourcedesign.net/js/jquery.min.js"></script>
+<script src="//opensourcedesign.net/js/underscore-min.js"></script>
+<script src="//opensourcedesign.net/js/site.js"></script>

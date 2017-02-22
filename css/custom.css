@@ -1,0 +1,146 @@
+.container {
+}
+
+small {
+  color: #737373;
+  font-weight: normal;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.help-block {
+  width: 70%;
+}
+
+legend {
+  font-size: 25px;
+}
+
+.form-control {
+  width: 70%;
+}
+
+#email-form{
+  text-align: center;
+}
+
+#email-form #emailaddress{
+  margin: 0 auto;
+  width: 300px;
+}
+
+a.btn.disabled {
+  pointer-events: auto;
+}
+
+.header-logo-row{
+  margin-bottom: 20px;
+}
+
+.main-logo{
+  width: 90px;
+  margin: 30px auto 0 auto;
+  display: block;
+}
+
+.realstrong{
+  font-weight:bold;
+  text-decoration: underline;
+}
+
+.footer-logo{
+  height: 50px;
+}
+
+#ride-austin-logo{
+}
+
+#tequila-logo{
+  height: 60px;
+}
+
+#sponsors-title{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.search-row{
+  background:#eee;
+  border-radius:50px;
+  padding: 15px 40px;
+}
+
+.search-row input{
+  float:left;
+  min-width: 300px;
+  padding: 6px 10px;
+}
+
+.search-row a{
+  float:right;
+}
+
+input{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.job-list{
+  margin-top: 20px;
+}
+
+.job-list p{
+  font-size:16px;
+  margin-top:5px;
+}
+
+.filters{
+  text-align: right;
+  margin-top:20px;
+}
+
+.filters a{
+  margin-left: 10px;
+  transition: none;
+}
+
+.filters .active{
+  text-decoration: underline;
+  font-weight:600;
+}
+
+.text-container{
+  padding: 40px 0 80px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+h1{
+  color:#111;
+}
+
+#mc_embed_signup{
+  text-align:left;
+}
+
+p{
+  margin-bottom: 20px;
+}
+
+h6{
+  text-transform: inherit;
+  text-align: left;
+  color:#111;
+  font-size:18px;
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+.event-row{
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
