@@ -5,7 +5,7 @@ date_posted: '2017-02-15'
 layout: jobs
 organization: White Horse
 org_url: 'https://www.drupal.org'
-title: General Manager
+title: Senior General Manager 
 category: management
 compensation: gratis
 skills: ''
