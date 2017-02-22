@@ -122,3 +122,23 @@ input{
 h1{
   color:#111;
 }
+
+#mc_embed_signup{
+  text-align:left;
+}
+
+p{
+  margin-bottom: 20px;
+}
+p:last-child{
+  margin-bottom: 20px;
+}
+
+h6{
+  text-transform: inherit;
+  text-align: left;
+  color:#111;
+  font-size:18px;
+  font-weight:bold;
+  margin-bottom:10px;
+}
