@@ -27,7 +27,7 @@ permalink: '/job-form/'
           Submit a job to In The Weeds
         </h1>
         <p class="lead">Let the community know you are looking for someone.  If the job is no longer available, please contact me at <a href="mailto:support@intheweedsjobs.com">support@intheweedsjobs.com</a>.</p>
-        <form method="POST" action="https://api.staticman.net/v2/entry/JonathanMatthey/gh-pages/jobs">
+        <form method="POST" action="https://api.staticman.net/v2/entry/JonathanMatthey/master/jobs">
           <input name="options[redirect]" type="hidden" value="https://jonathanmatthey.github.io/thank-you/">
           <input name="fields[status]" type="hidden" value="searching">
           <input name="fields[date_posted]" type="hidden">
@@ -51,7 +51,7 @@ permalink: '/job-form/'
             </div>
             <div class="form-group">
               <label for="business_url">Business website</label>
-              <input type="url"
+              <input type="text"
                 class="form-control"
                 id="business_url"
                 placeholder="E.g. www.myhotel.com"
@@ -60,7 +60,7 @@ permalink: '/job-form/'
             </div>
             <div class="form-group">
               <label for="location">Location</label>
-              <input type="url"
+              <input type="text"
                 class="form-control"
                 id="location"
                 placeholder="E.g. 123 Cesar Chavez"
