@@ -107,6 +107,7 @@ a.btn.disabled {
   .search-row a,
   .search-row input{
     width: 100%;
+    min-width: auto;
   }
 }
 
@@ -133,6 +134,12 @@ input{
 .filters a{
   margin-left: 10px;
   transition: none;
+}
+
+@media (max-width: 600px) {
+  .filters a{
+    font-size: 14px;
+  }
 }
 
 .filters .active{
