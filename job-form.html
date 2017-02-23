@@ -26,7 +26,7 @@ permalink: '/job-form/'
           <img style="height:80px;vertical-align: bottom;margin-right:5px;" src="/images/intheweeds-logo.png"/>
           Submit a job to In The Weeds
         </h1>
-        <p class="lead">Let the community know you are looking for Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum porro delectus, temporibus quos sapiente labore nobis.</p>
+        <p class="lead">Let the community know you are looking for someone.  If the job is no longer available, please contact me at <a href="mailto:support@intheweedsjobs.com">support@intheweedsjobs.com</a>.</p>
         <form method="POST" action="https://api.staticman.net/v2/entry/JonathanMatthey/gh-pages/jobs">
           <input name="options[redirect]" type="hidden" value="https://jonathanmatthey.github.io/thank-you/">
           <input name="fields[status]" type="hidden" value="searching">
@@ -41,23 +41,30 @@ permalink: '/job-form/'
           <fieldset>
             <legend>About you</legend>
             <div class="form-group">
-              <label for="organization">Organisation</label>
-              <p class="help-block">The name of your company, organisation or project.</p>
+              <label for="business_name">Business name</label>
               <input type="text"
                 class="form-control"
-                id="organization"
+                id="business_name"
                 placeholder="E.g. AcmeProjects"
-                name="fields[organization]"
+                name="fields[business_name]"
                 required>
             </div>
             <div class="form-group">
-              <label for="org_url">Organisation's URL</label>
-              <p class="help-block">A link to the organisation you entered above.</p>
+              <label for="business_url">Business website</label>
               <input type="url"
                 class="form-control"
-                id="org_url"
-                placeholder="E.g. https://www.acmeprojects.org"
-                name="fields[org_url]"
+                id="business_url"
+                placeholder="E.g. www.myhotel.com"
+                name="fields[business_url]"
+                required>
+            </div>
+            <div class="form-group">
+              <label for="location">Location</label>
+              <input type="url"
+                class="form-control"
+                id="location"
+                placeholder="E.g. 123 Cesar Chavez"
+                name="fields[location]"
                 required>
             </div>
           </fieldset>
@@ -65,11 +72,11 @@ permalink: '/job-form/'
             <legend>About the job</legend>
             <div class="form-group">
               <label for="title">Job title</label>
-              <p class="help-block">This will be the main heading in your job's page. Make it specific, but not too long. You could include a role and the name of your project.</p>
+              <p class="help-block">This will be the main heading in your job's page.</p>
               <input type="text"
                 class="form-control"
                 id="title"
-                placeholder="E.g. Sous Chef"
+                placeholder="E.g. General Manager"
                 name="fields[title]"
                 required>
             </div>
@@ -81,47 +88,14 @@ permalink: '/job-form/'
                 id="category"
                 name="fields[category]"
                 required>
-                <option value="bars">bars</option>
-                <option value="management">management</option>
-                <option value="tacotrucks">tacotrucks</option>
+                <option value="floor">Floor</option>
+                <option value="boh">BOH</option>
+                <option value="bar">Bar</option>
+                <option value="management">Management</option>
+                <option value="hotel">Hotel</option>
               </select>
             </div>
 
-            <div class="form-group">
-              <label>Compensation</label>
-              <p class="help-block">The type of remuneration on offer.</p>
-              <div class="radio">
-                <label>
-                  <input type="radio"
-                    name="fields[compensation]"
-                    id="gratis"
-                    value="gratis"
-                    checked>
-                  Gratis (we can't pay)
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio"
-                    name="fields[compensation]"
-                    id="paid"
-                    value="paid">
-                  Paid (yes, we can pay!)
-                </label>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="paid_details">
-                How much can you pay?
-                <small>(optional)</small>
-              </label>
-              <p class="help-block">Give some information about the payment offered. Try to be specific. A fixed amount or a range are good. Avoid things like "competitive": they are not very informative.</p>
-              <input type="text"
-                class="form-control"
-                id="fields[paid_details]"
-                placeholder="E.g. USD 5000 fixed rate"
-                name="paid_details">
-            </div>
             <div class="form-group">
               <label for="description">Job description</label>
               <p class="help-block">Include a brief introduction and explain the work needed.</p>
@@ -130,6 +104,44 @@ permalink: '/job-form/'
                 rows="5"
                 name="fields[description]"
                 required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="qualifications">Job qualifications</label>
+              <p class="help-block">List any specific qualifications needed</p>
+              <textarea class="form-control"
+                id="qualifications"
+                rows="5"
+                name="fields[qualifications]"
+                placeholder="E.g. ACF Certified Master Chef"
+                required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="job_type">Job Type</label>
+              <p class="help-block">Select a job type...</p>
+              <select
+                class="form-control"
+                id="job_type"
+                name="fields[job_type]"
+                required>
+                <option value="full_time">Full-Time</option>
+                <option value="part_time">Part-Time</option>
+                <option value="freelance">Freelance</option>
+                <option value="internship">Internship</option>
+                <option value="stage">Stage</option>
+                <option value="temporary">Temporary</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="compensation">
+                Compensation
+                <small>(optional)</small>
+              </label>
+              <p class="help-block">Give some information about the payment offered. Try to be specific. A fixed amount or a range are good.</p>
+              <input type="text"
+                class="form-control"
+                id="fields[compensation]"
+                placeholder="E.g. $30 per hour"
+                name="compensation">
             </div>
             <div class="form-group">
               <label for="how_to_apply">How to apply</label>
@@ -151,15 +163,6 @@ permalink: '/job-form/'
     <script src="/js/bootstrap.min.js"></script>
 
     <script>
-
-        function compensation() {
-          if ( $("#gratis").is(":checked") ) {
-            $("#paid_details").parent().slideUp();
-          }
-          else {
-            $("#paid_details").parent().slideDown();
-          }
-        }
 
         function slug (str) {
           str = str.replace(/^\s+|\s+$/g, ''); // trim
@@ -183,12 +186,6 @@ permalink: '/job-form/'
 
           $('input#title').keyup(function (e) {
             $('input#slug').val(slug(e.target.value));
-          });
-
-          compensation();
-
-          $("input:radio").click(function(){
-            compensation();
           });
 
           var date = new Date();
