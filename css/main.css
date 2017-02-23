@@ -9560,7 +9560,9 @@ h4 {
     vertical-align: top;
     border-bottom:1px solid #eee;
     padding: 10px 0;
-
+}
+.job-list>li:first-child {
+    border-top:1px solid #eee;
 }
 .job-list>li>h2,
 .job-list>li>p {
@@ -9589,7 +9591,7 @@ h4 {
     }
 }
 footer {
-    padding: 50px 0 0 0;
+    padding: 0 0 0 0;
 }
 footer p {
     margin: 0

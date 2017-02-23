@@ -70,7 +70,6 @@ a.btn.disabled {
 }
 
 #sponsors-title{
-  text-align:center;
   margin-bottom:20px;
 }
 
@@ -162,6 +161,15 @@ input{
 
 h1{
   color:#111;
+  margin-bottom: 20px;
+}
+
+.subtitle{
+  line-height: 24px;
+}
+
+.disclaimer{
+  margin-top:40px;
 }
 
 #mc_embed_signup{
@@ -204,6 +212,10 @@ p.strong{
 
 .job-details label{
   min-width: 200px;
+}
+
+h5{
+  text-align: center;
 }
 
 @media (max-width: 767px) {
