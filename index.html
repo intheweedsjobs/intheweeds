@@ -7,16 +7,18 @@ title: Jobs
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
       <h1>Jobs</h1>
-      <strong>
-        <p>
+        <p class="strong">
            Find your next rock star staff member - Find your next rock star job.  If you would like, <a href="https://www.facebook.com/groups/intheweedsatx" target="_blank">join our group</a>.
           <br/>
           All these services are FREE, just trying to help each other out.
         </p>
-      </strong>
+        <p class="small">
+          Jobs expire after 30days.  If the job is no longer available, please contact me at <a href="mailto:support@intheweedsjobs.com">support@intheweedsjobs.com</a> and I'll remove it.
+        </p>
+        <br/>
       <div class="search-row clearfix">
         <input id="search_term" name="term" placeholder="Search: 'waiter', 'barman', ..." type="text">
-        <a class="btn btn-primary" href="/intheweeds/job-form/">Post a job now</a>
+        <a class="btn btn-primary" href="/job-form/">Post a job now</a>
       </div>
 
       <div class="filters">
@@ -50,10 +52,11 @@ title: Jobs
       <div id="no-jobs" style="display: none;padding-top:20px;text-align:center;">
         <h5>No jobs match your search.</h5>
       </div>
+
     </div>
   </div>
 
-  <script src="/intheweeds/js/jquery.min.js"></script>
+  <script src="/js/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
 

@@ -43,7 +43,14 @@ a.btn.disabled {
   width: 90px;
   margin: 30px auto 0 auto;
   display: block;
+
 }
+
+.navbar-header .fa{
+  font-size:18px;
+  margin: 13px 15px 12px 0px;
+}
+
 
 .realstrong{
   font-weight:bold;
@@ -145,7 +152,37 @@ h6{
   border-bottom: 1px solid #eee;
 }
 
-.navbar-header .fa{
-  font-size:18px;
-  margin: 13px 15px 12px 0px;
+.navbar-toggle > .fa{
+  margin: 0 auto!important;
+}
+
+.nav.navbar-nav{
+  margin-top:0;
+}
+
+p.small{
+  font-size:15px;
+  font-weight:500;
+}
+p.strong{
+  font-weight:600;
+}
+
+.job-details label{
+  min-width: 200px;
+}
+
+@media (max-width: 767px) {
+  .main-logo{
+    margin-top: 80px;
+    width: 60px;
+  }
+
+  nav .navbar-brand{
+    margin:10px 0;
+  }
+
+  .navbar-header .fa{
+    margin: 21px 20px 20px 0;
+  }
 }

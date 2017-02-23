@@ -50,22 +50,20 @@ layout: default
       <div id="job-post" style="display: none;">
         <header class="post-header">
           <h1 class="post-title">{{ page.title }}</h1>
-          <div>
-            <label for="organization">Organization:</label> <a id="organization" class="organization" href="{{ page.org_url }}">{{ page.organization }}</a><br/>
-            <label for="status">Status:</label> <span id="status" class="status">{{ page.status }}</span><br/>
-            <label for="rate">Rate:</label> <span id="rate" class="rate">{{ page.rate }}</span><br/>
+          <div class="job-details">
+            <label for="name_of_business">Name of Business:</label> <a id="name_of_business" class="name_of_business">{{ page.name_of_business }}</a><br/>
+            <label for="business_description">Business Description:</label> <a id="business_description" class="business_description">{{ page.business_description }}</a><br/>
+            <label for="business_url">Business Website:</label> <a id="business_url" class="business_url" href="{{ page.business_url }}" target="_blank">{{ page.business_url }}</a><br/>
+            <label for="category">Category:</label> {{ page.category }}<br/>
+            <label for="compensation">Compensation:</label> <span id="compensation" class="compensation">{{ page.compensation }}</span><br/>
+            <label for="qualifications">Qualifications:</label> <span id="qualifications" class="qualifications">{{ page.qualifications }}</span><br/>
+            <label for="fulltime">Full Time:</label> <span id="fulltime" class="fulltime">{{ page.fulltime }}</span><br/>
             <label for="date">Date Posted:</label> <span id="date" class="date">{{ page.date_posted }}</span><br/>
           </div>
           <div class="role">
             {% if page.role %}
             <label for="skills">Role:</label>
               {{ page.role }}
-            {% endif %}
-          </div>
-          <div class="category">
-            {% if page.category %}
-            <label for="category">Category:</label>
-              {{ page.category }}
             {% endif %}
           </div>
           <div class="how_to_apply">
@@ -91,8 +89,8 @@ layout: default
   </div>
 </div>
 
-<script src="/intheweeds/js/cookie.js"></script>
-<script src="/intheweeds/js/jquery.min.js"></script>
+<script src="/js/cookie.js"></script>
+<script src="/js/jquery.min.js"></script>
 
 <script>
 

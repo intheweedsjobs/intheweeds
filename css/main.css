@@ -9392,7 +9392,7 @@ pre>code {
 .navbar-custom .nav li a.active {
     outline: none;
     color:#2a7ae2;
-    background: #fff;
+    background: transparent;
 }
 .navbar-custom .navbar-collapse a {
     color: #444;
@@ -9433,7 +9433,7 @@ pre>code {
     position: relative
 }
 .navbar-brand .logo {
-    height: 30px;
+    height: 24px;
     vertical-align: middle;
     margin-right: 4px;
     margin-top: -4px;

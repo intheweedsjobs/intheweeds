@@ -1,3 +1,3 @@
 # InTheWeeds
 
-it's a job board - https://jonathanmatthey.github.io/intheweeds/
+it's a job board - https://jonathanmatthey.github.io/
