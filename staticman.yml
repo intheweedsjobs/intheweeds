@@ -23,7 +23,7 @@ jobs:
   #
   # Name of the branch being used. Must match the one sent in the URL of the
   # request.
-  branch: "gh-pages"
+  branch: "master"
 
   # (*) REQUIRED
   #
@@ -50,7 +50,7 @@ jobs:
   moderation: true
 
   # Name of the site. Used in notification emails.
-  name: "intheweeds.me"
+  name: "http://www.intheweedsjobs.com"
 
   # Notification settings. When enabled, users can choose to receive notifications
   # via email when someone adds a reply or a new comment. This requires an account
@@ -82,17 +82,3 @@ jobs:
   # the name of the field and values are possible transformation types.
   transforms:
     description: "frontmatterContent"
-
-emails:
-  allowedFields: ["emailaddress", "date_posted"]
-  branch: "gh-pages"
-  filename: "{options.slug}"
-  format: "frontmatter"
-  generatedFields:
-    date:
-      type: date
-      options:
-        format: "iso8601"
-  moderation: true
-  name: "intheweeds.me"
-  path: "emails"
