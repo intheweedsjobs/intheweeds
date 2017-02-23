@@ -51,25 +51,32 @@ layout: default
         <header class="post-header">
           <h1 class="post-title">{{ page.title }}</h1>
           <div class="job-details">
-            <label for="name_of_business">Name of Business:</label> <a id="name_of_business" class="name_of_business">{{ page.name_of_business }}</a><br/>
-            <label for="business_description">Business Description:</label> <a id="business_description" class="business_description">{{ page.business_description }}</a><br/>
-            <label for="business_url">Business Website:</label> <a id="business_url" class="business_url" href="{{ page.business_url }}" target="_blank">{{ page.business_url }}</a><br/>
-            <label for="category">Category:</label> {{ page.category }}<br/>
-            <label for="compensation">Compensation:</label> <span id="compensation" class="compensation">{{ page.compensation }}</span><br/>
-            <label for="qualifications">Qualifications:</label> <span id="qualifications" class="qualifications">{{ page.qualifications }}</span><br/>
-            <label for="fulltime">Full Time:</label> <span id="fulltime" class="fulltime">{{ page.fulltime }}</span><br/>
-            <label for="date">Date Posted:</label> <span id="date" class="date">{{ page.date_posted }}</span><br/>
+            <label for="business_name">Business:</label>
+            {{ page.business_name }}
+            <br/>
+            <label for="location"></label>
+            {{ page.location }}
+            <br/>
+            <label for="business_url"></label>
+            <a id="business_url" class="business_url" href="{{ page.business_url }}" target="_blank">{{ page.business_url }}</a>
+            <br/>
+            <label for="category">Category:</label>
+            {{ page.category }}
+            <br/>
+            <label for="compensation">Compensation:</label>
+            <span id="compensation" class="compensation">{{ page.compensation }}</span>
+            <br/>
+            <label for="job_type">Job Type:</label>
+            <span id="job_type" class="job_type">{{ page.job_type }}</span>
+            <br/>
+            <label for="date">Date Posted:</label>
+            <span id="date" class="date">{{ page.date_posted }}</span>
+            <br/>
           </div>
           <div class="role">
             {% if page.role %}
             <label for="skills">Role:</label>
               {{ page.role }}
-            {% endif %}
-          </div>
-          <div class="how_to_apply">
-            {% if page.how_to_apply %}
-            <label for="how_to_apply">How to apply:</label>
-              {{ page.how_to_apply }}
             {% endif %}
           </div>
           <div class="links">
@@ -84,6 +91,24 @@ layout: default
           {{ page.description | markdownify }}
           {{ content }}
         </article>
+
+        <div class="qualifications">
+          {% if page.qualifications %}
+          <label for="qualifications">Qualifications needed:</label>
+          <p>
+            {{ page.qualifications }}
+          </p>
+          {% endif %}
+        </div>
+
+        <div class="how_to_apply">
+          {% if page.how_to_apply %}
+          <label for="how_to_apply">How to apply:</label>
+          <p>
+            {{ page.how_to_apply }}
+          </p>
+          {% endif %}
+        </div>
       </div>
     </div>
   </div>

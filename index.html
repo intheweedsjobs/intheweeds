@@ -34,13 +34,10 @@ title: Jobs
               {% unless page.title contains 'Job Title' %}{% comment %} Filter out the example page {% endcomment %}
               <li>
                 <a class="page-link" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.title }}</a>
-<!--
-                {% if page.role %}
-                <span class="pill role">{{ page.role }}</span>
+                <span class="pill business_name">@ {{ page.business_name }}</span>
+                {% if page.compensation %}
+                <span class="pill compensation"> - {{ page.compensation }}</span>
                 {% endif %}
--->
-                <span class="pill organization">@ {{ page.organization }}</span>
-                <span class="pill rate">{{ page.rate }}</span>
                 <span class="pill category {{ page.category }}">{{ page.category }}</span>
               </li>
               {% endunless %}
