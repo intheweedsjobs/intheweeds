@@ -136,8 +136,13 @@ input{
   transition: none;
 }
 
+.filters a:first-child{
+  margin-left: 0px;
+}
+
 @media (max-width: 600px) {
   .filters a{
+    margin-left: 7px;
     font-size: 14px;
   }
 }
