@@ -9589,7 +9589,7 @@ h4 {
     }
 }
 footer {
-    padding: 50px 0
+    padding: 50px 0 0 0;
 }
 footer p {
     margin: 0

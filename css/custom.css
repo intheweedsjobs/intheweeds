@@ -59,6 +59,7 @@ a.btn.disabled {
 
 .footer-logo{
   height: 50px;
+  margin-bottom: 30px;
 }
 
 #ride-austin-logo{
@@ -76,18 +77,39 @@ a.btn.disabled {
 .search-row{
   background:#eee;
   border-radius:50px;
-  padding: 15px 40px;
+  padding: 15px 40px 0 40px;
 }
 
 .search-row input{
-  float:left;
-  min-width: 300px;
   padding: 6px 10px;
+  margin-bottom: 15px;
+  min-width: 300px;
 }
 
 .search-row a{
   float:right;
+  margin-bottom: 15px;
 }
+
+@media (min-width: 767px) {
+  .search-row input{
+    float:left;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .search-row{
+    border-radius:20px;
+    padding: 15px 15px 0 15px;
+  }
+
+  .search-row a,
+  .search-row input{
+    width: 100%;
+  }
+}
+
 
 input{
   border: 1px solid #ddd;
