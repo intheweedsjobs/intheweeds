@@ -9,7 +9,7 @@ jobs:
   # not here is part of the request, an error will be thrown.
   allowedFields: ["business_name", "business_description", "business_url",
                   "compensation","title", "description", "qualifications",
-                  "how_to_apply", "date_posted", "location",
+                  "how_to_apply", "date_posted", "location", "job_type",
                   "layout", "role", "category"]
 
   # (*) REQUIRED WHEN USING NOTIFICATIONS
