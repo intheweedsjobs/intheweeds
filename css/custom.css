@@ -226,6 +226,20 @@ h5{
     font-weight: 400;
 }
 
+.donate-form{
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+  margin-top: -1px;
+}
+
+@media (max-width: 767px) {
+  .donate-form{
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
 @media (min-width: 768px) {
     .lead {
         font-size: 18px
