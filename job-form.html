@@ -35,6 +35,24 @@ permalink: '/job-form/'
           <fieldset>
             <legend>About you</legend>
             <div class="form-group">
+              <label for="full_name">Full Name</label>
+              <input type="text"
+                class="form-control"
+                id="full_name"
+                placeholder="John Smith"
+                name="fields[full_name]"
+                required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text"
+                class="form-control"
+                id="email"
+                placeholder="boss@hotel.com"
+                name="fields[email]"
+                required>
+            </div>
+            <div class="form-group">
               <label for="business_name">Business name</label>
               <input type="text"
                 class="form-control"
@@ -147,9 +165,13 @@ permalink: '/job-form/'
                 name="fields[how_to_apply]"></textarea>
             </div>
           </fieldset>
+<!--           <h5>Help your ad stand out</h5>
+            For only $30 - we will highlight your ad, keep it at the top of the list and every Wednesday for a month post on our facebook group with 6000+ Austinites.
+            <button type="submit" href="thankyou.html" class="btn btn-primary btn-lg">Submit your job to InTheWeeds For Free</button>
+          <hr/> -->
           <p>Most sites charge $20+ to post a job, this service is free, but a tip/donation is appreciated</p>
           <hr/>
-          <button type="submit" href="thankyou.html" class="btn btn-primary btn-lg">Submit your job to InTheWeeds</button>
+          <button type="submit" href="thankyou.html" class="btn btn-primary btn-lg">Submit your job to InTheWeeds For Free</button>
         </form>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="donate-form">
           <input type="hidden" name="cmd" value="_s-xclick">
