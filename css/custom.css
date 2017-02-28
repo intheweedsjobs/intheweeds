@@ -39,11 +39,15 @@ a.btn.disabled {
   margin-bottom: 20px;
 }
 
+.thank-you-container h1,
+.thank-you-container h3{
+  text-align:left;
+}
+
 .main-logo{
   width: 90px;
-  margin: 30px auto 0 auto;
+  margin: 50px auto 0 auto;
   display: block;
-
 }
 
 .navbar-header .fa{
@@ -51,6 +55,14 @@ a.btn.disabled {
   margin: 13px 15px 12px 0px;
 }
 
+.highlighted-example{
+  float:right;
+}
+
+.margin-center{
+  display: block;
+  margin:0 auto;
+}
 
 .realstrong{
   font-weight:bold;
@@ -110,6 +122,34 @@ a.btn.disabled {
   }
 }
 
+.highlighted::before{
+  background-color: #fc0;
+  font-weight: bold;
+  color: black;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 3px 5px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  margin-top: 2px;
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.highlighted{
+  background:#ffc;
+  border-bottom:1px solid #ccc!important;
+}
+
+.highlighted a{
+  color:#111!important;
+  font-weight:800!important;
+
+}
 
 input{
   border: 1px solid #ddd;

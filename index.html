@@ -30,18 +30,32 @@ title: Jobs
 
       <ul class="job-list">
         {% for page in site.pages reversed %}
-            {% if page.layout == 'jobs' %}
-              {% unless page.title contains 'Job Title' %}{% comment %} Filter out the example page {% endcomment %}
-              <li>
-                <a class="page-link" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.title }}</a>
-                <span class="pill business_name">@ {{ page.business_name }}</span>
-                {% if page.compensation %}
-                <span class="pill compensation"> - {{ page.compensation }}</span>
-                {% endif %}
-                <span class="pill category {{ page.category }}">{{ page.category }}</span>
-              </li>
+          {% if page.layout == 'jobs' and page.highlighted %}
+            <li class="highlighted">
+              <a class="page-link" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.title }}</a>
+              <span class="pill business_name">@ {{ page.business_name }}</span>
+              {% if page.compensation %}
+              <span class="pill compensation"> - {{ page.compensation }}</span>
+              {% endif %}
+              <span class="pill category {{ page.category }}">{{ page.category }}</span>
+            </li>
+          {% endif %}
+        {% endfor %}
+        {% for page in site.pages reversed %}
+          {% if page.layout == 'jobs' %}
+            {% unless page.title contains 'Job Title' %}
+              {% unless page.highlighted %}
+                <li>
+                  <a class="page-link" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.title }}</a>
+                  <span class="pill business_name">@ {{ page.business_name }}</span>
+                  {% if page.compensation %}
+                  <span class="pill compensation"> - {{ page.compensation }}</span>
+                  {% endif %}
+                  <span class="pill category {{ page.category }}">{{ page.category }}</span>
+                </li>
               {% endunless %}
-            {% endif %}
+            {% endunless %}
+          {% endif %}
         {% endfor %}
       </ul>
       <div id="no-jobs" style="display: none;padding-top:20px;text-align:center;">
