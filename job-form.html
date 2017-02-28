@@ -34,41 +34,45 @@ permalink: '/job-form/'
           <input name="options[slug]" type="hidden" id="slug" value="">
           <fieldset>
             <legend>About you</legend>
-            <div class="form-group">
-              <label for="full_name">Full Name</label>
-              <input type="text"
-                class="form-control"
-                id="full_name"
-                placeholder="John Smith"
-                name="fields[full_name]"
-                required>
+            <div class="row">
+              <div class="form-group col-xs-6">
+                <label for="full_name">Full Name</label>
+                <input type="text"
+                  class="form-control"
+                  id="full_name"
+                  placeholder="John Smith"
+                  name="fields[full_name]"
+                  required>
+              </div>
+              <div class="form-group col-xs-6">
+                <label for="email">Email</label>
+                <input type="text"
+                  class="form-control"
+                  id="email"
+                  placeholder="boss@hotel.com"
+                  name="fields[email]"
+                  required>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="text"
-                class="form-control"
-                id="email"
-                placeholder="boss@hotel.com"
-                name="fields[email]"
-                required>
-            </div>
-            <div class="form-group">
-              <label for="business_name">Business name</label>
-              <input type="text"
-                class="form-control"
-                id="business_name"
-                placeholder="E.g. AcmeProjects"
-                name="fields[business_name]"
-                required>
-            </div>
-            <div class="form-group">
-              <label for="business_url">Business website</label>
-              <input type="text"
-                class="form-control"
-                id="business_url"
-                placeholder="E.g. www.myhotel.com"
-                name="fields[business_url]"
-                required>
+            <div class="row">
+              <div class="form-group col-xs-6">
+                <label for="business_name">Business name</label>
+                <input type="text"
+                  class="form-control"
+                  id="business_name"
+                  placeholder="E.g. AcmeProjects"
+                  name="fields[business_name]"
+                  required>
+              </div>
+              <div class="form-group col-xs-6">
+                <label for="business_url">Business website</label>
+                <input type="text"
+                  class="form-control"
+                  id="business_url"
+                  placeholder="E.g. www.myhotel.com"
+                  name="fields[business_url]"
+                  required>
+              </div>
             </div>
             <div class="form-group">
               <label for="location">Location</label>
@@ -82,30 +86,32 @@ permalink: '/job-form/'
           </fieldset>
           <fieldset>
             <legend>About the job</legend>
-            <div class="form-group">
-              <label for="title">Job title</label>
-              <p class="help-block">This will be the main heading in your job's page.</p>
-              <input type="text"
-                class="form-control"
-                id="title"
-                placeholder="E.g. General Manager"
-                name="fields[title]"
-                required>
-            </div>
-            <div class="form-group">
-              <label for="category">Category</label>
-              <p class="help-block">What category is this job?</p>
-              <select
-                class="form-control"
-                id="category"
-                name="fields[category]"
-                required>
-                <option value="floor">Floor</option>
-                <option value="boh">BOH</option>
-                <option value="bar">Bar</option>
-                <option value="management">Management</option>
-                <option value="hotel">Hotel</option>
-              </select>
+            <div class="row">
+              <div class="form-group col-xs-6">
+                <label for="title">Job title</label>
+                <p class="help-block">This will be the main heading in your job's page.</p>
+                <input type="text"
+                  class="form-control"
+                  id="title"
+                  placeholder="E.g. General Manager"
+                  name="fields[title]"
+                  required>
+              </div>
+              <div class="form-group col-xs-6">
+                <label for="category">Category</label>
+                <p class="help-block">What category is this job?</p>
+                <select
+                  class="form-control"
+                  id="category"
+                  name="fields[category]"
+                  required>
+                  <option value="floor">Floor</option>
+                  <option value="boh">BOH</option>
+                  <option value="bar">Bar</option>
+                  <option value="management">Management</option>
+                  <option value="hotel">Hotel</option>
+                </select>
+              </div>
             </div>
 
             <div class="form-group">

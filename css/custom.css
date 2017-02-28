@@ -11,7 +11,7 @@ small {
 }
 
 .help-block {
-  width: 70%;
+  width: 100%;
 }
 
 legend {
@@ -19,7 +19,7 @@ legend {
 }
 
 .form-control {
-  width: 70%;
+  width: 100%;
 }
 
 #email-form{
