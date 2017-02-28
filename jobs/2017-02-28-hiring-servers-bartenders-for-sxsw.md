@@ -11,6 +11,7 @@ qualifications: "Past experience in upscale events and fine dining.\r\nWine know
 job_type: temporary
 how_to_apply: Email your CV to info@placeinvaders.com and we'll set up a video interview.
 date: '2017-02-28T18:20:39.990Z'
+highlighted: true
 ---
 We are looking for a few key service hires (two bartenders, two servers) for a series of events during SXSW, schedule below. We're a unique, pop-up dining series and we're hosting dinners and cocktail parties during the Interactive part of the festival for 25-80 guests. 
 
