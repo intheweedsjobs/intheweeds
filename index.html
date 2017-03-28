@@ -37,7 +37,12 @@ title: Jobs
               {% if page.compensation %}
               <span class="pill compensation"> - {{ page.compensation }}</span>
               {% endif %}
-              <span class="pill category {{ page.category }}">{{ page.category }}</span>
+              <span class="pill category {{ page.category }}">
+              {{ page.category }}
+              {% if page.date_posted %}
+                <span class="pill date_posted"> - {{ page.date_posted | date: "%-d %B"}}</span>
+              {% endif %}
+              </span>
             </li>
           {% endif %}
         {% endfor %}
@@ -49,9 +54,14 @@ title: Jobs
                   <a class="page-link" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.title }}</a>
                   <span class="pill business_name">@ {{ page.business_name }}</span>
                   {% if page.compensation %}
-                  <span class="pill compensation"> - {{ page.compensation }}</span>
+                    <span class="pill compensation"> - {{ page.compensation }}</span>
                   {% endif %}
-                  <span class="pill category {{ page.category }}">{{ page.category }}</span>
+                  <span class="pill category {{ page.category }}">
+                  {{ page.category }}
+                  {% if page.date_posted %}
+                    <span class="pill date_posted"> - {{ page.date_posted | date: "%-d %B"}}</span>
+                  {% endif %}
+                  </span>
                 </li>
               {% endunless %}
             {% endunless %}
