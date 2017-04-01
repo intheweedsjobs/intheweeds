@@ -9388,6 +9388,19 @@ pre>code {
     padding-right: 0;
     padding-left: 0
 }
+.bold-list{
+    padding:0;
+    margin: 0;
+}
+.bold-list li{
+    list-style:none;
+}
+.bold-list h6{
+    text-decoration: underline;
+}
+.featured-job-email{
+    float:right;
+}
 .icon {
     color: #828282
 }
