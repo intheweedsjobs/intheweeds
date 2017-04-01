@@ -9582,6 +9582,18 @@ pre>code {
         display: block;
         padding: 5px 10px
     }
+    .filters a:first-child{
+        margin-left:10px!important;
+    }
+    .filters a{
+        margin-bottom:10px;
+        text-align:left;
+        display: block;
+    }
+    .job-details label{
+        display: block;
+        margin-top:10px;
+    }
 }
 .navbar-nav>li>a {
     padding-top: 10px
