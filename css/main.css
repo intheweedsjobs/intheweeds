@@ -260,6 +260,80 @@ th {
     src: url("/fonts/glyphicons-halflings-regular.eot");
     src: url("/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("/fonts/glyphicons-halflings-regular.woff") format("woff"), url("/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg")
 }
+
+.filters .icon{
+    margin-right:10px;
+    background:none;
+}
+
+.job-list .icon{
+    opacity:0.6;
+    margin-right: 5px;
+}
+
+.job-list.highlighted{
+    border:2px solid #666!important;
+    padding:10px 10px 0 10px;
+}
+
+.job-list.highlighted li:last-child{
+    border-bottom: none!important;
+}
+
+.job-list.highlighted h5{
+    text-align:left;
+    float:left;
+    margin: 5px 0px;
+    color:#111;
+}
+
+.icon{
+    width:25px;
+    height:25px;
+    background-size:cover;
+    background-position: center;
+    display: inline-block;
+    background-repeat: no-repeat;
+    position: relative;
+    vertical-align: middle;
+    stroke: #337ab7;
+}
+
+.icon > svg{
+    width: 100%;
+    height: 100%;
+}
+
+.icon.color-stroke svg ellipse,
+.icon.color-stroke svg path,
+.icon.color-stroke svg line{
+    stroke: #337ab7!important;
+}
+.icon.color-path svg path{
+    fill: #337ab7!important;
+}
+
+.icon-floor{
+    background-image:url(/images/icon-waiter.svg);
+}
+.icon-boh{
+    background-image:url(/images/icon-knife-fork.svg);
+}
+.icon-bar{
+    background-image:url(/images/icon-cocktail.svg);
+}
+.icon-management{
+    background-image:url(/images/icon-clipboard.svg);
+}
+.icon-hotel{
+    background-image:url(/images/icon-bed.svg);
+}
+
+.filters a:first-child{
+    margin-right:15px;
+}
+
+
 .glyphicon {
     position: relative;
     top: 1px;
@@ -1563,6 +1637,10 @@ pre code {
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px
+}
+
+.container .hero{
+    margin-top:50px;
 }
 .container:before,
 .container:after {
@@ -9313,15 +9391,6 @@ pre>code {
 .icon {
     color: #828282
 }
-.icon>svg {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    vertical-align: middle
-}
-.icon>svg path {
-    fill: #828282
-}
 .light {
     font-weight: 400
 }
@@ -9395,16 +9464,12 @@ pre>code {
         padding: 10px 0;
         border-bottom: none;
         letter-spacing: 1px;
-        background: transparent;
-        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
-        transition: background .5s ease-in-out, padding .5s ease-in-out
+        background: white;
     }
     .navbar-custom .navbar-collapse a {
         color: #444
     }
     .navbar-custom.top-nav-collapse {
-        padding: 0;
         background: #fff;
         border-bottom: 1px solid #eee;
     }
