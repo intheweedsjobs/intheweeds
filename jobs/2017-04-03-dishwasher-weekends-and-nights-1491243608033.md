@@ -1,7 +1,7 @@
 ---
 _id: 2a478590-189a-11e7-9031-e36613b494d7
 date_posted: '2017-04-03'
-layout: post
+layout: jobs
 full_name: Leslie Martin
 poster_email: leslie@bouldincreek.com
 business_name: Bouldin Creek Cafe
