@@ -14,6 +14,7 @@ job_type: full_time
 compensation: to be discussed on experience
 how_to_apply: "If you are interested in joining our family for lunch service please contact me at any of the following :\r\n\r\ne-mail:   beto@thepeachedtortilla.com\r\nmobile:  915.613.6856\r\noffice:    512.330.4439"
 date: '2017-04-07T19:46:25.314Z'
+highlighted: yes
 timestamp: 1491594385
 ---
 The Peached Tortilla started in 2010 as a food truck, after winning several awards it has expanded to a brick and mortar.
