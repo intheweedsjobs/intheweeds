@@ -157,6 +157,10 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none
 }
+#mc_embed_signup .mc-field-group select {
+    height: 34px;
+    margin-top: 2px;
+}
 fieldset {
     border: 1px solid #c0c0c0;
     margin: 0 2px;
