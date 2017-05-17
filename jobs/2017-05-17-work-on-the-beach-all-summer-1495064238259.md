@@ -7,7 +7,7 @@ poster_email: Kc@beachsidebillys.com
 business_name: Beachside Billy's
 business_url: 'http://waterparkaustin.com/'
 location: '16107 FM2769 Leander, TX 78641'
-title: Work on the beach all summer
+title: Waterpark and Bar staff needed
 category: floor
 qualifications: >-
   TABC Certified, Facebook account, Smart Phone, Reliable Transportation, Great
