@@ -17,7 +17,7 @@ compensation: >-
   Hourly plus tips. If you are really good, I am happy to pay more than minimum
   per hour
 how_to_apply: Email kc@beachsidebillys.com
-date: '2017-05-03T00:09:04.304Z'
+date: '2017-05-17T00:09:04.304Z'
 highlighted: yes
 ---
 Work at Lake Travis's newest venue, Beachside Billys. With the newly updated Volente Beach Waterpark, the only SANDY BEACH on Lake Travis and the nearly waterfront Blu's Bar, we are looking for the most outgoing, service oriented bartenders that want to be part of the most fun place on the lake.
