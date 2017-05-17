@@ -22,9 +22,10 @@ how_to_apply: >-
   explains your personality and how it can fit in with our company.  We provide
   the beach you provide the smile!
 date: '2017-05-17T23:37:18.257Z'
+highlighted: yes
 ---
 Work at Lake Travis’s newest venue, Beachside Billys. With the newly updated Volente Beach Waterpark, the only SANDY BEACH on Lake Travis and the nearly waterfront Blu’s Bar, we are looking for the most outgoing, service oriented bartenders that want to be part of the most fun place on the lake.
 
 If you like working outside, around water, music and people having fun, Beachside Billys is the place.
 
-Hiring Servers, Support Staff, and Door persons
+Hiring Servers, Support Staff, and Door persons, and Bartenders
