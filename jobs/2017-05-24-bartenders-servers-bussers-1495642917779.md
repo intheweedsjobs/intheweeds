@@ -16,6 +16,7 @@ how_to_apply: >-
   Email your resume, three references, cover letter and wage requirements in
   response to this ad at: ptollar@gmail.com
 date: '2017-05-24T16:21:57.777Z'
+highlighted: yes
 ---
 EL CHIPIRÓN is a Spanish restaurant & gastro-bar located in South Lamar Blvd, We are bringing a unique concept to Austin. High end food and Service in an informal and playful atmosphere done the Spanish way. We want to create an enjoyable and friendly yet professional atmosphere for our workers and customers.
 We are looking for Bartenders, Servers and Bussers who are passionate about Spanish food, wines, beers and cocktails. Detail-oriented people with a high work ethic, and a team work spirit.
