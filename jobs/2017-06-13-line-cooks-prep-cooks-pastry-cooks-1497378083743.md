@@ -17,6 +17,7 @@ how_to_apply: >-
   website www.tinyboxwoods.com/join-our-team/
 timestamp: 1497378083
 date: '2017-06-13T18:21:23.741Z'
+highlighted: yes
 ---
 Join our opening team in Austin!
     
