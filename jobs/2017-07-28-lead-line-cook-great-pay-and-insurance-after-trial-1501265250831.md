@@ -14,5 +14,6 @@ job_type: full_time
 compensation: $13-15/insurance after trial period
 how_to_apply: Send resume to hiring@bouldincreek.com
 date: '2017-07-28T18:07:30.829Z'
+highlighted: yes
 ---
 Looking for lead line cooks. Bouldin Creek Cafe is a well established high volume vegetarian restaurant open for almost 20 years. The kitchen is small so clean organized  team players with good skills are the best candidates. Respect for the food is required but you personal dietary choices don't matter to us. Just care about your procuct and we are good!
