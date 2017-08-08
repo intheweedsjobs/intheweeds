@@ -16,6 +16,7 @@ how_to_apply: >-
   *Please visit www.fairmontcareers.com to create your Talent Profile before the
   event!*
 date: '2017-08-08T13:33:49.870Z'
+highlighted: yes
 ---
 Austin's most-anticipated luxury hotel, Fairmont Austin, is now hiring for ALL POSITIONS! 
 No matter what interests you- FOH, BOH, Management, Culinary -we have an opportunity for you! 
