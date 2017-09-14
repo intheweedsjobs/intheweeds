@@ -2,6 +2,9 @@
 
 Service Industry Job Board for Austin TX - https://jonathanmatthey.github.io/
 
+```
+bundle exec jekyll serve --watch
+```
 
 ## Instructions KC
 
