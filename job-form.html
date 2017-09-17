@@ -153,6 +153,32 @@ permalink: '/job-form/'
               </select>
             </div>
             <div class="form-group">
+              <label for="hours">
+                Hours
+              </label>
+              <p class="help-block">Give some information about the hours. Try to be as specific as you can.</p>
+              <input type="text"
+                     class="form-control"
+                     id="hours"
+                     placeholder="E.g. 9AM-5PM"
+                     name="fields[hours]"
+                     required
+              >
+            </div>
+            <div class="form-group">
+              <label for="start">
+                Start Date
+              </label>
+              <p class="help-block">Give some information about start date. Try to be as specific as you can.</p>
+              <input type="text"
+                     class="form-control"
+                     id="start"
+                     placeholder="E.g. Immediate"
+                     name="fields[start]"
+                     required
+              >
+            </div>
+            <div class="form-group">
               <label for="compensation">
                 Compensation
                 <small>(optional)</small>
@@ -258,7 +284,9 @@ permalink: '/job-form/'
                 'qualifications': $('#qualifications').val(),
                 'job_type': $('#job_type').val(),
                 'compensation': $('#compensation').val(),
-                'how_to_apply': $('#how_to_apply').val()
+                'how_to_apply': $('#how_to_apply').val(),
+                  'hours': $('#hours').val(),
+                  'start': $('#start').val(),
               };
               //console.log(x);
               window.open('//www.jobbery.net/addcampaign?q=' + JSON.stringify(x), '_blank');

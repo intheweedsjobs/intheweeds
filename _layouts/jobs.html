@@ -81,6 +81,16 @@ layout: default
             <label for="job_type">Job Type:</label>
             <span id="job_type" class="job_type">{{ page.job_type }}</span>
             <br/>
+            {% if page.hours %}
+            <label for="hours">Hours:</label>
+            <span id="hours" class="hours">{{ page.hours }}</span>
+            <br/>
+            {% endif %}
+            {% if page.start %}
+            <label for="start">Start Date:</label>
+            <span id="start" class="hours">{{ page.start }}</span>
+            <br/>
+            {% endif %}
             <label for="date">Date Posted:</label>
             <span id="date" class="date">{{ page.date_posted }}</span>
             <br/>
