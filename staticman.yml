@@ -10,7 +10,7 @@ jobs:
   allowedFields: ["business_name", "business_description", "business_url",
                   "compensation","title", "description", "qualifications",
                   "how_to_apply", "date_posted", "location", "job_type",
-                  "layout", "role", "category", "poster_email", "full_name"]
+                  "layout", "role", "category", "poster_email", "full_name", "hours", "start"]
 
   # (*) REQUIRED WHEN USING NOTIFICATIONS
   #
