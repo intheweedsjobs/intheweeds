@@ -16,6 +16,7 @@ start: Fall 2017
 compensation: 'Competative pay, varies by position'
 how_to_apply: "How to apply:\r\n*Please visit www.fairmontcareers.com to create your Talent Profile before the event!*"
 date: '2017-09-20T15:52:42.302Z'
+highlighted: yes
 ---
 Austin’s most-anticipated luxury hotel, Fairmont Austin, is now hiring for ALL POSITIONS! 
 
