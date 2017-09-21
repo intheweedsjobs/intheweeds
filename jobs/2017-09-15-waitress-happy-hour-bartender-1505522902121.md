@@ -14,5 +14,6 @@ job_type: full_time
 compensation: 'tips, commisions, hourly'
 how_to_apply: email juanvega@ricks.com or text 2108850238 to set up an interview!
 date: '2017-09-16T00:48:22.118Z'
+highlighted: yes
 ---
 Rick's Cabaret, the leading organization in the Adult club industry is looking for some pm waitresses and a female happy hour bartender for the Austin location. Hourly, bonuses, commissions, tips! Great club , amazing money all while having fun! Flexible schedules available.
