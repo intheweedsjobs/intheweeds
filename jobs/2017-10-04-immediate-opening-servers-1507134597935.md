@@ -16,5 +16,6 @@ start: ASAP
 compensation: '$10/hour, plus tips and free meal with shift'
 how_to_apply: Call Laurie at 512-423-8857 or Stuart at 361-765-8550
 date: '2017-10-04T16:29:57.934Z'
+highlighted: yes
 ---
 Marye's Gourmet Pizza Pub is HIRING. We are looking for EXPERIENCED wait staff -- one year minimum. Position starts at $10/hour, plus tips and free meal with shift. Great customers, generous tips and welcoming atmosphere. Positions available for afternoon/evening shifts, no late nights. Call 512-423-8857 or 361-765-8550. We look forward to hearing from you!
