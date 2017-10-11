@@ -16,5 +16,6 @@ start: Immediate
 compensation: ''
 how_to_apply: "https://www.serranos.com/join-our-team/\r\nOR apply in person Monday - Thursday from 1:30 pm - 4 pm at any of our locations"
 date: '2017-10-10T00:20:36.257Z'
+highlighted: yes
 ---
 We are seeking friendly, knowledgeable, guest-oriented Bartenders and Cocktail Servers with a passion for hospitality to join our team. We offer fast paced training programs, a professional and team oriented environment, future opportunities for growth, and paid vacations and sick pay for full time staff.
