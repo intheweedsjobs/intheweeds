@@ -16,6 +16,7 @@ start: Immediate
 compensation: Based on Experience
 how_to_apply: "In Person\r\nSalt Traders Coastal Cooking\r\n2850 North IH-35\r\nRound Rock, TX 78681"
 date: '2017-10-31T20:57:26.878Z'
+highlighted: yes
 ---
 Salt Traders Coastal Cooking seafood restaurant in Round Rock. We need 2 full time Line Cooks - Day and Night shifts. . 
 
