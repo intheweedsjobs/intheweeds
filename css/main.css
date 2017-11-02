@@ -3784,7 +3784,7 @@ tbody.collapse.in {
     bottom: 100%;
     margin-bottom: 2px
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .navbar-right .dropdown-menu {
         right: 0;
         left: auto
@@ -4113,7 +4113,7 @@ tbody.collapse.in {
 .nav>li>a {
     position: relative;
     display: block;
-    padding: 10px 15px
+    padding: 10px 10px
 }
 .nav>li>a:hover,
 .nav>li>a:focus {
@@ -4209,7 +4209,7 @@ tbody.collapse.in {
     top: auto;
     left: auto
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .nav-justified>li,
     .nav-tabs.nav-justified>li {
         display: table-cell;
@@ -4237,7 +4237,7 @@ tbody.collapse.in {
 .nav-tabs.nav-justified>.active>a:focus {
     border: 1px solid #ddd
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .nav-tabs-justified>li>a,
     .nav-tabs.nav-justified>li>a {
         border-bottom: 1px solid #ddd;
@@ -4277,7 +4277,7 @@ tbody.collapse.in {
 .navbar:after {
     clear: both
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .navbar {
         border-radius: 4px
     }
@@ -4290,7 +4290,7 @@ tbody.collapse.in {
 .navbar-header:after {
     clear: both
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .navbar-header {
         float: left
     }
@@ -4314,7 +4314,7 @@ tbody.collapse.in {
 .navbar-collapse.in {
     overflow-y: auto
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .navbar-collapse {
         width: auto;
         border-top: 0;
@@ -4353,7 +4353,7 @@ tbody.collapse.in {
     margin-right: -15px;
     margin-left: -15px
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .container>.navbar-header,
     .container>.navbar-collapse,
     .container-fluid>.navbar-header,
@@ -4366,7 +4366,7 @@ tbody.collapse.in {
     z-index: 1000;
     border-width: 0 0 1px
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .navbar-static-top {
         border-radius: 0
     }
@@ -4378,7 +4378,7 @@ tbody.collapse.in {
     left: 0;
     z-index: 1030
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .navbar-fixed-top,
     .navbar-fixed-bottom {
         border-radius: 0
@@ -4407,7 +4407,7 @@ tbody.collapse.in {
 .navbar-brand>img {
     display: block
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .navbar>.container .navbar-brand,
     .navbar>.container-fluid .navbar-brand {
         margin-left: -15px
@@ -4437,7 +4437,7 @@ tbody.collapse.in {
 .navbar-toggle .icon-bar+.icon-bar {
     margin-top: 4px
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .navbar-toggle {
         display: none
     }
@@ -4472,7 +4472,7 @@ tbody.collapse.in {
         background-image: none
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .navbar-nav {
         float: left;
         margin: 0
@@ -4496,7 +4496,7 @@ tbody.collapse.in {
     margin-top: 8px;
     margin-bottom: 8px
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .navbar-form .form-group {
         display: inline-block;
         margin-bottom: 0;
@@ -4554,7 +4554,7 @@ tbody.collapse.in {
         margin-bottom: 0
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .navbar-form {
         width: auto;
         border: 0;
@@ -4596,14 +4596,14 @@ tbody.collapse.in {
     margin-top: 15px;
     margin-bottom: 15px
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .navbar-text {
         float: left;
         margin-left: 15px;
         margin-right: 15px
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .navbar-left {
         float: left !important
     }
@@ -9461,7 +9461,7 @@ pre>code {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
-    font-size: 14px;
+    font-size: 12px;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
@@ -10149,4 +10149,17 @@ ul.banner-social-buttons {
 .post-content img {
     margin: 30px auto;
     display: block
+}
+
+
+@media (min-width: 1200px) {
+
+    .navbar-custom .nav li a{
+        font-size:14px;
+    }
+
+    .nav>li>a{
+        padding:10px 15px;
+    }
+
 }
