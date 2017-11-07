@@ -273,20 +273,20 @@ permalink: '/job-form/'
             console.log(FormValid());
             if (FormValid()) {
               var x = {
-                'full_name': $('#full_name').val(),
-                'poster_email': $('#poster_email').val(),
-                'business_name': $('#business_name').val(),
-                'business_url': $('#business_url').val(),
-                'location': $('#location').val(),
-                'title': $('#title').val(),
-                'category': $('#category').val(),
-                'description': $('#description').val(),
-                'qualifications': $('#qualifications').val(),
-                'job_type': $('#job_type').val(),
-                'compensation': $('#compensation').val(),
-                'how_to_apply': $('#how_to_apply').val(),
-                  'hours': $('#hours').val(),
-                  'start': $('#start').val(),
+                'full_name': encodeURIComponent($('#full_name').val()),
+                'poster_email': encodeURIComponent($('#poster_email').val()),
+                'business_name': encodeURIComponent($('#business_name').val()),
+                'business_url': encodeURIComponent($('#business_url').val()),
+                'location': encodeURIComponent($('#location').val()),
+                'title': encodeURIComponent($('#title').val()),
+                'category': encodeURIComponent($('#category').val()),
+                'description': encodeURIComponent($('#description').val()),
+                'qualifications': encodeURIComponent($('#qualifications').val()),
+                'job_type': encodeURIComponent($('#job_type').val()),
+                'compensation': encodeURIComponent($('#compensation').val()),
+                'how_to_apply': encodeURIComponent($('#how_to_apply').val()),
+                  'hours': encodeURIComponent($('#hours').val()),
+                  'start': encodeURIComponent($('#start').val()),
               };
               //console.log(x);
               window.open('https://www.jobbery.net/addcampaign?q=' + JSON.stringify(x), '_blank');
