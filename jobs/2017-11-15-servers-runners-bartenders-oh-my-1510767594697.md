@@ -21,6 +21,7 @@ compensation: >-
   $15+/hr
 how_to_apply: "https://themoviehouse.companycareersite.com/ or in person at: \r\n8300 FM 620 Austin, TX 78726"
 date: '2017-11-15T17:39:54.695Z'
+highlighted: yes
 ---
 Looking for some extra holiday cash? 
 Want to see all of the holiday movies for free while you're at it? 
