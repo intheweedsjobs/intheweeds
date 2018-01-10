@@ -1,0 +1,30 @@
+---
+_id: 6c86cc10-f641-11e7-9233-11f0291e4532
+date_posted: '2018-01-10'
+layout: jobs
+full_name: LisaMarie Pinder
+poster_email: revelryatx@gmail.com
+business_name: Revelry Kitchen + Bar
+business_url: www.revelryatx.com
+location: '1410 East 6th Street, Austin, TX 78702'
+title: 'BARTENDER, EXPO, and BARBACK for EASTSIDE BAR'
+category: bar
+qualifications: TABC and FOOD HANDLERS
+job_type: full_time
+hours: '3pm-12am Mon-Thursday, 3pm-2am Friday, Saturday 10am-2am, Sunday 10am-12am'
+start: ASAP
+compensation: Hourly plus tip out
+how_to_apply: Please send resume to revelryatx@gmail.com
+date: '2018-01-10T20:04:11.573Z'
+---
+We are looking for friendly and outgoing people to join our rock-solid team!
+
+Flexible schedules and open availability (Saturday and Sunday), TABC and Food Handlers certified a must.  Must care about hospitality and creating a unique experience for guests. We are a counter-service restaurant and bar, so all staff is expected to take food orders, get out from behind the bar to check on guests, and run food when necessary.  
+
+Opportunity for management to right individuals.  
+
+BARTENDER - Bartender must have craft cocktail and high volume experience. Must be knowledgeable about spirits and flavor profiles. Must care about hospitality and creating a unique experience for guests. Must want to cultivate regulars and promote the restaurant and themselves through their social networks.  Hourly plus tip out.
+
+EXPO - Expo must be able to communicate to the BOH and FOH, help execute the line, and run food. Hourly plus tip out.
+
+BAR BACK - Bar Back is a flexible roll that must run food, bus tables, communicate to guests, and give general barback and cleaning duties. Must be able to lift 50 lbs.  Hourly plus tip out.
