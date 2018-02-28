@@ -1,7 +1,7 @@
 ---
 _id: 31370460-1c0a-11e8-a0fe-3ffbe97072a6
 date_posted: '2018-02-27'
-layout: post
+layout: jobs
 full_name: Chance Robertson
 poster_email: chance.robertson@themoviehouse.com
 business_name: Moviehouse & Eatery

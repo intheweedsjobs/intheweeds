@@ -17,6 +17,4 @@ compensation: NEG
 how_to_apply: Email us with a headshot @ davidpoku10@gmail.com and your TABC certs.
 date: '2018-02-28T03:02:10.537Z'
 ---
-Hello,
-
-We are a brand new bar on Rainey Street and we just renovated and received our liquor license approval. We are looking for bartendars, door guys, and bus boys to launch this bar! We will start March 6th and most likely meet with folks before then.
+Hello, We are a brand new bar on Rainey Street and we just renovated and received our liquor license approval. We are looking for bartendars, door guys, and bus boys to launch this bar! We will start March 6th and most likely meet with folks before then.
