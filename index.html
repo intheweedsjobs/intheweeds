@@ -30,28 +30,30 @@ title: Jobs
       <ul class="job-list highlighted">
         <h5>Featured jobs</h5>
         {% for page in site.pages reversed %}
-          {% if page.layout == 'jobs' and page.highlighted %}
-            <li class="highlighted">
-              <a class="page-link" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">
-              <i class="icon icon-{{ page.category }}"></i>{{ page.title }}</a>
-              <span class="pill business_name">@ {{ page.business_name }}</span>
-              {% if page.compensation %}
-              <span class="pill compensation"> - {{ page.compensation }}</span>
-              {% endif %}
-              <span class="pill category {{ page.category }}">
-              {{ page.category }}
-              {% if page.date_posted %}
-                <span class="pill date_posted"> - {{ page.date_posted | date: "%-d %B"}}</span>
-              {% endif %}
-              </span>
-            </li>
+          {% if page.layout == 'jobs' or page.layoutt == 'jobs' %}
+            {% if page.highlighted %}
+              <li class="highlighted">
+                <a class="page-link" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">
+                <i class="icon icon-{{ page.category }}"></i>{{ page.title }}</a>
+                <span class="pill business_name">@ {{ page.business_name }}</span>
+                {% if page.compensation %}
+                <span class="pill compensation"> - {{ page.compensation }}</span>
+                {% endif %}
+                <span class="pill category {{ page.category }}">
+                {{ page.category }}
+                {% if page.date_posted %}
+                  <span class="pill date_posted"> - {{ page.date_posted | date: "%-d %B"}}</span>
+                {% endif %}
+                </span>
+              </li>
+            {% endif %}
           {% endif %}
         {% endfor %}
       </ul>
       <ul class="job-list">
         <span></span>
         {% for page in site.pages reversed %}
-          {% if page.layout == 'jobs' %}
+          {% if page.layout == 'jobs' or page.layoutt == 'jobs' %}
             {% unless page.title contains 'Job Title' %}
               {% unless page.highlighted %}
                 <li>
