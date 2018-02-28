@@ -19,6 +19,7 @@ compensation: >-
   $2.13/hr + tips and average $17-$25/hr.
 how_to_apply: "Apply on-line at www.themoviehouse.com or in person at: \r\n\r\n8300 FM620 Building B\r\nAustin, TX 78726"
 date: '2018-02-27T22:04:33.904Z'
+highlighted: yes
 foo: bar
 ---
 undefined
