@@ -1,19 +1,181 @@
 ---
 layout: default
 ---
+
+
 <div class="container">
   <div class="row">
     <div class="post col-md-8 col-md-offset-2">
+      <div id="email-form-wrapper">
+        <p>In order to read this job, please enter your email address.  We'll never spam you but we'd like help you find a great job.</p>
+        <!-- Begin MailChimp Signup Form -->
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+          #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+          /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+             We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+        <div id="mc_embed_signup" class="row">
+          <div class="post col-md-8 col-md-offset-2">
+<form action="//intheweedsjobs.us15.list-manage.com/subscribe/post?u=b03974fcb556de4bd4e231482&amp;id=2d8c2063f5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                <div class="mc-field-group">
+                  <label for="mce-FNAME">First Name <span class="asterisk">*</span></label>
+                  <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+                </div>
+                <div class="mc-field-group">
+                  <label for="mce-LNAME">Last Name <span class="asterisk">*</span></label>
+                  <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+                </div>
+                <div class="mc-field-group">
+                  <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                </label>
+                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                </div>
+                <div class="mc-field-group">
+                  <label for="mce-Category">What Job Category Are You Looking For </label>
+                  <select name="CATEGORY" class="" id="mce-CATEGORY">
+                    <option value=""></option>
+                    <option value="Floor">Floor</option>
+                    <option value="BOH">BOH</option>
+                    <option value="Bar">Bar</option>
+                    <option value="Management">Management</option>
+                    <option value="Hotel">Hotel</option>
+                  </select>
+                </div>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b03974fcb556de4bd4e231482_2d8c2063f5" tabindex="-1" value=""></div>
+                <input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary" style="margin:10px auto;">
+                <small>By clicking Join you agree to our <a href="/terms" target="_blank">Terms and Conditions</a> and our <a href="/privacy" target="_blank">Privacy Policy.</a></small>
+              </div>
+            </form>
+          </div>
+        </div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='CATEGORY';ftypes[3]='dropdown';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        <!--End mc_embed_signup-->
+      </div>
 
-      <header class="post-header">
-        <h1 class="post-title">{{ page.title }}</h1>
-        <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-      </header>
+      <div id="job-post" style="display: none;">
+        <header class="post-header">
+          <h1 class="post-title">{{ page.title }}</h1>
+          <div class="job-details">
+            <label for="business_name">Business:</label>
+            {{ page.business_name }}
+            <br/>
+            <label for="location"></label>
+            {{ page.location }}
+            <br/>
+            <label for="business_url"></label>
+            <a id="business_url" class="business_url" href="//{{ page.business_url }}" target="_blank">{{ page.business_url }}</a>
+            <br/>
+            <label for="category">Category:</label>
+            {{ page.category }}
+            <br/>
+            <label for="compensation">Compensation:</label>
+            <span id="compensation" class="compensation">{{ page.compensation }}</span>
+            <br/>
+            <label for="job_type">Job Type:</label>
+            <span id="job_type" class="job_type">{{ page.job_type }}</span>
+            <br/>
+            {% if page.hours %}
+            <label for="hours">Hours:</label>
+            <span id="hours" class="hours">{{ page.hours }}</span>
+            <br/>
+            {% endif %}
+            {% if page.start %}
+            <label for="start">Start Date:</label>
+            <span id="start" class="hours">{{ page.start }}</span>
+            <br/>
+            {% endif %}
+            <label for="date">Date Posted:</label>
+            <span id="date" class="date">{{ page.date_posted }}</span>
+            <br/>
+          </div>
+          <div class="role">
+            {% if page.role %}
+            <label for="skills">Role:</label>
+              {{ page.role }}
+            {% endif %}
+          </div>
+          <div class="links">
+            {% if page.links %}
+            <label for="links">Links:</label>
+              {{ page.links }}
+            {% endif %}
+          </div>
+        </header>
 
-      <article class="post-content">
-        {{ content }}
-      </article>
+        <article class="post-content" data="{{content}}">
+          {{ page.description | markdownify }}
+          {{ content }}
+        </article>
 
+        <div class="qualifications">
+          {% if page.qualifications %}
+          <label for="qualifications">Qualifications needed:</label>
+          <p>
+            {{ page.qualifications }}
+          </p>
+          {% endif %}
+        </div>
+
+        <div class="how_to_apply">
+          {% if page.how_to_apply %}
+          <label for="how_to_apply">How to apply:</label>
+          <p>
+            {{ page.how_to_apply }}
+          </p>
+          {% endif %}
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+<script src="/js/cookie.js"></script>
+<script src="/js/jquery.min.js"></script>
+
+<script>
+
+    $(document).ready(function() {
+      var interval = null;
+
+      console.log(Cookies.get('intheweedsEmail'));
+      if(Cookies.get('intheweedsEmail')){
+        $("#email-form-wrapper").hide();
+        $("#job-post").show();
+      }
+
+      $('input#emailaddress').keyup(function (e) {
+        $('input#slug').val(e.target.value.replace(/[^a-zA-Z]/g, ""));
+      });
+
+      $("#mc-embedded-subscribe-form").submit(function(){
+        interval = setInterval(checkMailChimpSuccess, 300);
+      });
+
+      function checkMailChimpSuccess(){
+        if($("#mce-success-response").length){
+          clearInterval(interval);
+          Cookies.set('intheweedsEmail', $('input#emailaddress').val());
+          $("#email-form-wrapper").hide();
+          $("#job-post").show();
+        }
+      }
+
+      var date = new Date();
+      var day = ("0" + date.getDate()).slice(-2);
+      var month = ("0"+(date.getMonth()+1)).slice(-2);
+      var year = date.getFullYear();
+
+      var datestring = year + "-" + month + "-" + day;
+
+      $('#date_posted').val(datestring);
+      $('#redirect').val(location.href);
+
+  });
+</script>
