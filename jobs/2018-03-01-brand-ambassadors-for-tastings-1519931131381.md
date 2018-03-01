@@ -18,5 +18,6 @@ start: immediate
 compensation: $22 - $30 an hour
 how_to_apply: 'https://www.dragonspiritsmarketing.com/application'
 date: '2018-03-01T19:05:31.380Z'
+highlighted: yes
 ---
 undefined
