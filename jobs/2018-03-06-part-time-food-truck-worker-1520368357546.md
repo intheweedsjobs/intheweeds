@@ -1,0 +1,25 @@
+---
+_id: 821939c0-217d-11e8-aa9c-dfa80684aaf4
+date_posted: '2018-03-06'
+layout: jobs
+layoutt: jobs
+full_name: Jennifer Adams
+poster_email: jennjackalope@gmail.com
+business_name: Jackalope South Shore
+business_url: www.jackalopebar.com
+location: '1523 Tinnin Ford Rd., Austin, TX 78741'
+title: Part Time Food Truck Worker
+category: boh
+qualifications: "➔Must be 21+\r\n➔ you should be able to work an entire shift without smoking\r\n➔ You must be able to work nights and weekends\r\n➔ Must have prior cook/ kitchen experience\r\n➔ must be able to lift 30+ pounds\r\n➔ must be food handler certified"
+job_type: part_time
+hours: >-
+  Food truck is open from 4-midnight Mon-Fri, and from 12 pm-12 am Friday and
+  Saturday.  Shifts are typically 6-8 hours.
+start: Immediate
+compensation: >-
+  $10 per hour, plus tip out from bar food sales.  Average hourly including tips
+  is $12-$16 per hour.
+how_to_apply: Email jennjackalope@gmail.com
+date: '2018-03-06T20:32:37.544Z'
+---
+We’re looking to add a hardworking and fun loving cook to our team. Aside from being an awesome cook you should also be comfortable talking with guests and running food. Guests order food with the bar and the food truck staff prepare, cook, and run food orders to guests. Pay includes hourly plus tip out from the bar based on food sales. The food truck is located on our giant back patio. We are looking for full time and part time staff.
