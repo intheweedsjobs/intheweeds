@@ -17,5 +17,6 @@ start: Immediate
 compensation: ''
 how_to_apply: Contact Kevin (512)680-7860 or (512)479-7616
 date: '2018-03-20T19:25:03.419Z'
+highlighted: yes
 ---
 Downtown Austin Restaurant Hiring All Kitchen Positions- chef, sous chef,cooks, prep and dish call Kevin (512)680-7860 or (512) 479-7616
