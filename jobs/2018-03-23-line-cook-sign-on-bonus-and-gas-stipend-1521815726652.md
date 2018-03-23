@@ -22,5 +22,7 @@ start: Immediate
 compensation: Competetive
 how_to_apply: "Apply online at:\r\nhttps://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?job=18037&clientkey=53F3A804CEEAE946FAE93E7EB7DA4DA1\r\n\r\nOr in person at:\r\n12501 Longhorn Parkway\r\nAustin, TX 78732\r\n\r\nOr email:\r\ntlist@longhornvillage.com"
 date: '2018-03-23T14:35:26.650Z'
+highlighted: yes
+
 ---
 undefined
