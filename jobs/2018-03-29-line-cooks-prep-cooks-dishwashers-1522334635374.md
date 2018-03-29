@@ -22,6 +22,7 @@ start: Immediate
 compensation: $10-15/hr BOE
 how_to_apply: "call Joseph 512-844-5726\r\nemail joseph_backspin@hotmail.com"
 date: '2018-03-29T14:43:55.372Z'
+highlighted: yes
 slug: line-cooks-prep-cooks-dishwashers
 timestamp: 1522334635372
 ---
